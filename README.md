@@ -22,3 +22,5 @@ insta-spots/
 │ └── main.js # (to be added later)
 ├── images/
 ├── README.md
+
+---
