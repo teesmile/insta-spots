@@ -24,4 +24,4 @@ insta-spots/
 ├── README.md
 
 ---
-## coll
+
