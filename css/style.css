@@ -5,58 +5,59 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
-#BodyPart{
-    max-width:1280px;
-    max-height: 980px;
-    margin: 50px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+#bodyPart{
+    max-width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin: 2rem; 
     border-top: 1px solid rgba(33, 33, 33, 0.4);
     border-bottom: 1px solid rgba(33, 33, 33, 0.4);
 }
-#BodyPart #UpperBodyContainer,
-#BodyPart #LowerBodyContainer {
+#bodyPart #upperBodyContainer,
+#bodyPart #lowerBodyContainer {
     display: flex;
     flex-direction:row;
     gap: 20px;
 }
-#FirstSection_1b{
+#firstSection_1b{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 19.5rem;
+    gap: 19rem;
 }
-#SecondSection_1b{
+#secondSection_1b{
    display: flex;
    flex-direction: row;
    align-items: center;
-   gap: 17rem; 
+   gap: 16rem; 
 }
-#ThirdSection_1b{
+#thirdSection_1b{
    display: flex;
    flex-direction: row;
    align-items: center;
    gap: 17.3rem; 
 }
-#FourthSection_1b{
+#fourthSection_1b{
    display: flex;
    flex-direction: row;
    align-items: center;
-   gap: 9rem; 
+   gap: 8rem; 
 }
-#FifthSection_1b{
+#fifthSection_1b{
    display: flex;
    flex-direction: row;
    align-items: center;
    gap: 13rem;   
 }
-#SixthSection_1b{
+#sixthSection_1b{
    display: flex;
    flex-direction: row;
    align-items: center;
    gap: 17rem; 
 }
 #image-3{
-    border-radius: 7px;
+    border-radius: 10px;
 }
