@@ -7,7 +7,103 @@ body{
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    margin: 0;
 }
+
+#menuBar {
+    width: 320px;
+    height: 46px;
+    background-color: #fefdfa;
+    border: 0;
+    text-align: center;
+    border-bottom: 1px;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+
+#logoImg {
+    width: 94px;
+    height: 26px;
+    padding-top: 7px;
+}
+
+#first_container {
+    width: 288px;
+    height: 274px;
+    margin: 32px 16px;
+    border-bottom: 1px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+#left_container {
+    text-align: center;
+}
+
+#avatarImg {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+#textContainer {
+    text-align: center;
+}
+
+.user-name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.user-role {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+}
+        
+#right_container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-btn {
+    width: 107.34px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    opacity: 70%;
+}
+
+.new-post-btn {
+    display: flex;
+    color: #fff;
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+    width: 288px;
+    height: 52px;
+    border-radius: 8px;
+    padding: 18px 32px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
 #bodyPart{
     max-width: 100%;
     padding-top: 2.5rem;

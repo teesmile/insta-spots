@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Icon" href="./assets/Logo.svg" type="website-logo"/>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Insta-Spots</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="menuBar"><img src="./assets/Logo.svg" alt="Logo" id="logoImg"></div>
@@ -13,20 +17,20 @@
         <div id="left_container">
           <img src="./assets/Avatar.svg" alt="Avatar" id="avatarImg">
           <div id="textContainer">
-            <p>Bessie Coleman</p>
-            <p>Civil Aviator</p>
-            <span
-              >Icon
-              <p>Edit Profile</p></span
-            >
+            <p class="user-name">Bessie Coleman</p>
+            <p class="user-role">Civil Aviator</p>
           </div>
         </div>
         <div id="right_container">
-          <button>
-            <span
-              >Icon
-              <p>New Post</p></span
-            >
+          <span class="edit-btn">
+              Icon
+              <p>Edit Profile</p>
+          </span>
+          <button class="new-post-btn">
+            <span>
+              Icon
+              <span>New Post</span>
+            </span>
           </button>
         </div>
       </div>
