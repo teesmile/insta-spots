@@ -90,11 +90,19 @@ img {
 
      .card-data p {
         flex-basis: 70%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
     }
 } 
+
+/*Target: landscape mode tablets, ipads*/
+
+@media (min-width: 1025px) and (max-width: 1043px) {
+    #bodyPart {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+
+    }
+}
 
 /*Devices: Low resolution tablets, mobile*/
 @media (min-width: 481px) and (max-width: 767px) {
