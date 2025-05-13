@@ -115,9 +115,6 @@ img {
 
     .card-data p {
         flex-basis: 65%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
     }
 }
 
@@ -131,8 +128,5 @@ img {
     .card-data p {
         font-size: .85rem;
         flex-basis: 60%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
     }
 }
