@@ -1,3 +1,69 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"poppins";
+}
+
+#menuBar{
+background-color:#FFFFFFCC;
+width:100%;
+text-align: center;
+padding-top:10px;
+
+}
+#first_container {
+  display:flex;
+  gap:45rem;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width:1440px;
+  margin: 0 auto;
+}
+
+#left_container {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+#textContainer {
+  display: flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+
+.name {
+  font-weight:500px;
+  font-size: 2.8rem;
+  color: #212121;
+
+}
+
+.title {
+  color:#212121B2;
+  font-size: 0.95rem;
+  margin-bottom:1.95rem;
+
+}
+.edit-profile {
+  font-size: 0.95rem;
+  margin-top:0.95rem;
+}
+
+#right_container{
+  display: flex;
+  justify-self: end;
+  align-content: end;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  margin-top:180px;
+}
+
+
 body{
     max-width: 1440px;
     background-color: #f8f2e5;
