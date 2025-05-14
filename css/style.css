@@ -132,14 +132,20 @@ img {
     overflow: hidden;
 }
 
-.card-data svg {
+.like-icon {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.like-icon svg {
     cursor: pointer;
     stroke: #212121;
     opacity: .4;
     transition: all ease 0.3s;
 }
 
-
+/*For like icon hover effect: change svg opacity*/
 
 
 #image-3 {
