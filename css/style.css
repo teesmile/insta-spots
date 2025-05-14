@@ -20,6 +20,71 @@ html {
     --color-dark-gray: #212121;
 
 }
+#menuBar{
+background-color:#FFFFFFCC;
+width:100%;
+text-align: center;
+padding-top:10px;
+}
+
+#logoImg{
+margin-left:600px;
+}
+
+#first_container {
+  display:flex;
+  gap:48rem;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width:1440px;
+  margin: 0 auto;
+}
+
+#left_container {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+#textContainer {
+  display: flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+#textContainer p:first-of-type {
+  font-size:1.95rem;
+  font-weight: 500;
+  color:#212121;
+}
+
+#textContainer p:nth-of-type(2) {
+  font-size:0.95rem;
+  color:#212121B2;
+  margin-bottom:40px;
+}
+
+#textContainer span  {
+  font-size: 0.9rem;
+  color:#212121;
+  
+}
+#textContainer span p {
+  font-size:0.58rem;
+  color:#212121;
+  
+}
+#right_container{
+  display: flex;
+  justify-self: end;
+  align-content: end;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  margin-top:200px;
+}
+
 
 body {
     background-color: var(--bg-body);
@@ -35,6 +100,7 @@ img {
     height: auto;
     display: block;
 }
+
 
 #bodyPart {
     max-width: 90%;
