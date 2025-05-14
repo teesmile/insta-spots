@@ -1,99 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Insta-Spots</title>
-  </head>
-  <body>
-    <div id="menuBar"><img src="./assets/Logo.svg" alt="Logo" id="logoImg"></div>
-    <header>
-      <div id="first_container">
-        <div id="left_container">
-          <img src="./assets/Avatar.svg" alt="Avatar" id="avatarImg">
-          <div id="textContainer">
-            <p>Bessie Coleman</p>
-            <p>Civil Aviator</p>
-            <span
-              >Icon
-              <p>Edit Profile</p></span
-            >
-          </div>
-        </div>
-        <div id="right_container">
-          <button>
-            <span
-              >Icon
-              <p>New Post</p></span
-            >
-          </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Insta-Spots</title>
+</head>
+
+<body>
+  <div id="menuBar"><img src="./assets/Logo.svg" alt="Logo" id="logoImg"></div>
+  <header>
+    <div id="first_container">
+      <div id="left_container">
+        <img src="./assets/Avatar.svg" alt="Avatar" id="avatarImg">
+        <div id="textContainer">
+          <p>Bessie Coleman</p>
+          <p>Civil Aviator</p>
+          <span>Icon
+            <p>Edit Profile</p>
+          </span>
         </div>
       </div>
-    </header>
-
-    <section id="bodyPart">
-      <div id="upperBodyContainer">
-        <div id="firstSection_1a">
-          <img src="./assets/Card-1.svg" alt="A_Snowed_House" />
-          <div id="firstSection_1b">
-            <p>Val Thorens</p>
-            <img src="./assets/Like Icon.svg" alt="Love_Icon" />
-          </div>
-        </div>
-
-        <div id="secondSection_1a">
-            <img src="./assets/Card-2.svg" alt="A_Restaurant" />
-            <div id="secondSection_1b">
-              <p>Restaurant terrace</p>
-              <img src="./assets/Like Icon.svg" alt="Love_Icon" />
-            </div>
-          </div>
-
-          <div id="thirdSection_1a">
-            <img src="./assets/Card-3.svg" id="image-3" alt="A_Cafe" />
-            <div id="thirdSection_1b">
-              <p>An outdoor cafe</p>
-              <img src="./assets/Like Icon.svg" alt="Love_Icon" />
-            </div>
-          </div>
+      <div id="right_container">
+        <button>
+          <span>Icon
+            <p>New Post</p>
+          </span>
+        </button>
       </div>
+    </div>
+  </header>
 
-      <div id="lowerBodyContainer">
-        <div id="fourthSection_1a">
-          <img src="./assets/Card-4.svg" alt="A_Bridge" />
-          <div id="fourthSection_1b">
-            <p>A very long bridge, over the forest...</p>
-            <img src="./assets/Like Icon.svg" alt="Love_Icon" />
-          </div>
-        </div>
-
-        <div id="fifthSection_1a">
-            <img src="./assets/Card-5.svg" alt="A_Tunnel" />
-            <div id="fifthSection_1b">
-              <p>Tunnel with morning light</p>
-              <img src="./assets/Like Icon.svg" alt="Love_Icon" />
-            </div>
-          </div>
-
-          <div id="sixthSection_1a">
-            <img src="./assets/Card-6.svg" alt="A_Mountain_House" />
-            <div id="sixthSection_1b">
-              <p>Mountain house</p>
-              <img src="./assets/Like Icon.svg" alt="Love_Icon" />
-            </div>
-          </div>
+  <section id="bodyPart">
+    <div id="firstSection_1a" class="card-component">
+      <img src="./assets/Card-1.svg" alt="A_Snowed_House" />
+      <div id="firstSection_1b" class="card-data">
+        <p>Val Thorens</p>
+        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Like Icon">
+            <path id="Union"
+              d="M15.9512 1.05664C17.3161 0.856584 18.8067 1.15981 20.1602 2.32812L20.4287 2.57324C22.6597 4.72264 22.3285 8.02556 20.5967 9.89355L20.4248 10.0693L11.5 18.6025L2.57422 10.0693H2.5752C0.754421 8.29659 0.296669 5.00618 2.36328 2.78516L2.57129 2.57324C3.99417 1.20243 5.593 0.843258 7.04883 1.05664C8.5402 1.27524 9.89546 2.09997 10.7266 3.11523L11.5 4.06055L12.2734 3.11523C13.1045 2.09997 14.4598 1.27524 15.9512 1.05664Z"
+              stroke-width="2" />
+          </g>
+        </svg>
       </div>
-    </section>
+    </div>
 
-    <!-- Footer Section -->
+    <div id="secondSection_1a" class="card-component">
+      <img src="./assets/Card-2.svg" alt="A_Restaurant" />
+      <div id="secondSection_1b" class="card-data">
+        <p>Restaurant terrace</p>
+        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Like Icon">
+            <path id="Union"
+              d="M15.9512 1.05664C17.3161 0.856584 18.8067 1.15981 20.1602 2.32812L20.4287 2.57324C22.6597 4.72264 22.3285 8.02556 20.5967 9.89355L20.4248 10.0693L11.5 18.6025L2.57422 10.0693H2.5752C0.754421 8.29659 0.296669 5.00618 2.36328 2.78516L2.57129 2.57324C3.99417 1.20243 5.593 0.843258 7.04883 1.05664C8.5402 1.27524 9.89546 2.09997 10.7266 3.11523L11.5 4.06055L12.2734 3.11523C13.1045 2.09997 14.4598 1.27524 15.9512 1.05664Z"
+              stroke-width="2" />
+          </g>
+        </svg>
+      </div>
+    </div>
 
-<footer class="copyright">
-            <p>2024 &copy; Spots</p>
+    <div id="thirdSection_1a" class="card-component">
+      <img src="./assets/Card-3.svg" id="image-3" alt="A_Cafe" />
+      <div id="thirdSection_1b" class="card-data">
+        <p>An outdoor cafe</p>
+        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Like Icon">
+            <path id="Union"
+              d="M15.9512 1.05664C17.3161 0.856584 18.8067 1.15981 20.1602 2.32812L20.4287 2.57324C22.6597 4.72264 22.3285 8.02556 20.5967 9.89355L20.4248 10.0693L11.5 18.6025L2.57422 10.0693H2.5752C0.754421 8.29659 0.296669 5.00618 2.36328 2.78516L2.57129 2.57324C3.99417 1.20243 5.593 0.843258 7.04883 1.05664C8.5402 1.27524 9.89546 2.09997 10.7266 3.11523L11.5 4.06055L12.2734 3.11523C13.1045 2.09997 14.4598 1.27524 15.9512 1.05664Z"
+              stroke-width="2" />
+          </g>
+        </svg>
+      </div>
+    </div>
 
-        </footer>
-    <!-- Footer Section Ends -->
+    <div id="fourthSection_1a" class="card-component">
+      <img src="./assets/Card-4.svg" alt="A_Bridge" />
+      <div id="fourthSection_1b" class="card-data">
+        <p>A very long bridge, over the forest...</p>
+        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Like Icon">
+            <path id="Union"
+              d="M15.9512 1.05664C17.3161 0.856584 18.8067 1.15981 20.1602 2.32812L20.4287 2.57324C22.6597 4.72264 22.3285 8.02556 20.5967 9.89355L20.4248 10.0693L11.5 18.6025L2.57422 10.0693H2.5752C0.754421 8.29659 0.296669 5.00618 2.36328 2.78516L2.57129 2.57324C3.99417 1.20243 5.593 0.843258 7.04883 1.05664C8.5402 1.27524 9.89546 2.09997 10.7266 3.11523L11.5 4.06055L12.2734 3.11523C13.1045 2.09997 14.4598 1.27524 15.9512 1.05664Z"
+              stroke-width="2" />
+          </g>
+        </svg>
+      </div>
+    </div>
 
-    
-  </body>
+    <div id="fifthSection_1a" class="card-component">
+      <img src="./assets/Card-5.svg" alt="A_Tunnel" />
+      <div id="fifthSection_1b" class="card-data">
+        <p>Tunnel with morning light</p>
+        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Like Icon">
+            <path id="Union"
+              d="M15.9512 1.05664C17.3161 0.856584 18.8067 1.15981 20.1602 2.32812L20.4287 2.57324C22.6597 4.72264 22.3285 8.02556 20.5967 9.89355L20.4248 10.0693L11.5 18.6025L2.57422 10.0693H2.5752C0.754421 8.29659 0.296669 5.00618 2.36328 2.78516L2.57129 2.57324C3.99417 1.20243 5.593 0.843258 7.04883 1.05664C8.5402 1.27524 9.89546 2.09997 10.7266 3.11523L11.5 4.06055L12.2734 3.11523C13.1045 2.09997 14.4598 1.27524 15.9512 1.05664Z"
+              stroke-width="2" />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div id="sixthSection_1a" class="card-component">
+      <img src="./assets/Card-6.svg" alt="A_Mountain_House" />
+      <div id="sixthSection_1b" class="card-data">
+        <p>Mountain house</p>
+        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Like Icon">
+            <path id="Union"
+              d="M15.9512 1.05664C17.3161 0.856584 18.8067 1.15981 20.1602 2.32812L20.4287 2.57324C22.6597 4.72264 22.3285 8.02556 20.5967 9.89355L20.4248 10.0693L11.5 18.6025L2.57422 10.0693H2.5752C0.754421 8.29659 0.296669 5.00618 2.36328 2.78516L2.57129 2.57324C3.99417 1.20243 5.593 0.843258 7.04883 1.05664C8.5402 1.27524 9.89546 2.09997 10.7266 3.11523L11.5 4.06055L12.2734 3.11523C13.1045 2.09997 14.4598 1.27524 15.9512 1.05664Z"
+              stroke-width="2" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+
+  <footer class="copyright">
+    <p>2024 &copy; Spots</p>
+
+  </footer>
+  <!-- Footer Section Ends -->
+
+
+</body>
+
 </html>
