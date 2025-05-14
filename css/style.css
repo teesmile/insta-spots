@@ -116,6 +116,7 @@ img {
 
 .card-component {
   flex: 0 1 calc(33.33% - 1rem);
+
 }
 
 .card-data {
@@ -131,6 +132,7 @@ img {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+
 }
 
 .card-data svg {
@@ -140,13 +142,14 @@ img {
   transition: all ease 0.3s;
 }
 
-/*for like hover: change opacity*/
+
 
 #image-3 {
   border-radius: 10px;
 }
 
 /*Media Queries*/
+
 /* Devices: Tablets, ipads */
 @media (min-width: 768px) and (max-width: 1024px) {
   #bodyPart {
