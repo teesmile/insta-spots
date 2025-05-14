@@ -81,13 +81,37 @@ html {
 }
 #right_container {
   display: flex;
-  justify-self: end;
-  align-content: end;
+  width: 120px;
+  height: 40px;
+  flex-direction: row;
+  justify-self: center;
+  align-content: center;
   align-items: center;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  background-color: #111;
   gap: 0.4rem;
   font-size: 1rem;
-  margin-top: 200px;
+  margin-top:200px;
+  padding: 0.5rem;;
 }
+
+#right_container:hover {
+  background-color: rgb(52, 51, 51);
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+#right_container img {
+  height: 20px;
+  width: 20px;
+  filter: invert(1);
+}
+
+#right_container p {
+  color: #ffffff;
+}
+
 
 body {
   background-color: var(--bg-body);
@@ -140,6 +164,10 @@ img {
   stroke: #212121;
   opacity: 0.4;
   transition: all ease 0.3s;
+}
+
+.card-data svg:hover {
+    opacity: 1;
 }
 
 
