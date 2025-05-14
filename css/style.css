@@ -2,7 +2,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:"poppins";
+font-family:"Poppins" sans-serif;
 }
 
 #menuBar{
@@ -37,7 +37,7 @@ padding-top:10px;
 
 .name {
   font-weight:500px;
-  font-size: 2.8rem;
+  font-size:2.8rem;
   color: #212121;
 
 }
@@ -71,7 +71,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: 500;
 }
 #bodyPart{
