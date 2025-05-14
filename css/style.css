@@ -138,6 +138,13 @@ img {
     transition: all ease 0.3s;
 }
 
+.copyright p{
+    font-size: 0.8rem;
+    color: #212121B2;
+    text-align: center;
+    padding: 1.5rem;
+}
+
 /*for like hover: change opacity*/
 
 
