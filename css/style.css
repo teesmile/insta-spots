@@ -104,16 +104,16 @@ img {
 
 #bodyPart {
     max-width: 90%;
-    padding: 2.5rem 0;
+    padding: 2rem 0 2.5rem;
     margin: 2rem auto;
     border-block: 1px solid rgba(33, 33, 33, 0.4);
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2.25rem 1.25rem;
 }
 
 .card-component {
-    flex: 0 1 calc(33.33% - 1rem);
+    min-width: 100%;
 }
 
 .card-data {
@@ -125,6 +125,7 @@ img {
 .card-data p {
     color: var(--color-dark-gray);
     font-weight: var(--font-weight-bold);
+    font-size: 1rem;
     flex-basis: 75%;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -138,14 +139,7 @@ img {
     transition: all ease 0.3s;
 }
 
-.copyright p{
-    font-size: 0.8rem;
-    color: #212121B2;
-    text-align: center;
-    padding: 1.5rem;
-}
 
-/*for like hover: change opacity*/
 
 
 #image-3 {
@@ -153,53 +147,39 @@ img {
 }
 
 /*Media Queries*/
-/* Devices: Tablets, ipads */
- @media (min-width: 768px) and (max-width: 1024px) {
-    #bodyPart {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-    }
-
-     .card-data p {
-        flex-basis: 70%;
-    }
-} 
-
-/*Target: landscape mode tablets, ipads*/
-
-@media (min-width: 1025px) and (max-width: 1043px) {
-    #bodyPart {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-
-    }
-}
-
-/*Devices: Low resolution tablets, mobile*/
-@media (min-width: 481px) and (max-width: 767px) {
-    #bodyPart {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-
-    }
-
-    .card-data p {
-        flex-basis: 65%;
-    }
-}
-
 
 /*Devices: Smartphones , mobile*/
-@media (min-width: 320px) and (max-width: 480px) {
-    .card-component {
-        flex: 1 1 100%;
-    }
+@media (max-width: 480px) {
 
     .card-data p {
         font-size: .85rem;
         flex-basis: 60%;
+    }
+}
+
+/* Devices: Tablets, ipads */
+@media (min-width: 600px) {
+    #bodyPart {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-data p {
+        font-size: .9rem;
+        flex-basis: 70%;
+    }
+}
+
+/*Devices: Laptops, desktops*/
+@media(min-width: 1024px) {
+    #bodyPart {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*Target: large screens*/
+@media (min-width: 1280px) {
+    #bodyPart {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.75rem 1.5rem;
     }
 }
