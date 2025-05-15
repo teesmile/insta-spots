@@ -19,6 +19,7 @@ html {
   --font-weight-bold: 500;
   --color-dark-gray: #212121;
 }
+
 #menuBar {
   background-color: #ffffffcc;
   width: 100%;
@@ -33,7 +34,7 @@ html {
 #logoImg {
   max-width: 100%;
   height: auto;
-  width: auto;
+  width: auto; /* Ensure it scales correctly */
   display: block;
 }
 
@@ -57,12 +58,17 @@ html {
 #textContainer {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 #textContainer p:first-of-type {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #212121;
+}
+
+strong {
+  opacity: 0.7;
 }
 
 #textContainer p:nth-of-type(2) {
@@ -81,12 +87,35 @@ html {
 }
 #right_container {
   display: flex;
-  justify-self: end;
-  align-content: end;
+  width: 120px;
+  height: 40px;
+  flex-direction: row;
+  justify-self: center;
+  align-content: center;
   align-items: center;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  background-color: #111;
   gap: 0.4rem;
   font-size: 1rem;
   margin-top: 200px;
+  padding: 0.5rem;
+}
+
+#right_container:hover {
+  background-color: rgb(52, 51, 51);
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+#right_container img {
+  height: 20px;
+  width: 20px;
+  filter: invert(1);
+}
+
+#right_container p {
+  color: #ffffff;
 }
 
 body {
@@ -109,14 +138,13 @@ img {
   padding: 2.5rem 0;
   margin: 2rem auto;
   border-block: 1px solid rgba(33, 33, 33, 0.4);
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2.25rem 1.25rem;
 }
 
 .card-component {
-  flex: 0 1 calc(33.33% - 1rem);
-
+  min-width: 100%;
 }
 
 .card-data {
@@ -127,22 +155,41 @@ img {
 
 .card-data p {
   color: var(--color-dark-gray);
+  font-size: 1rem;
   font-weight: var(--font-weight-bold);
   flex-basis: 75%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-
 }
 
-.card-data svg {
+.like-button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.like-button svg {
   cursor: pointer;
   stroke: #212121;
   opacity: 0.4;
   transition: all ease 0.3s;
 }
 
+.like-button svg:hover {
+  opacity: 1;
+}
 
+.sr-only {
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
 
 #image-3 {
   border-radius: 10px;
@@ -152,16 +199,6 @@ img {
 
 /* Devices: Tablets, ipads */
 @media (min-width: 768px) and (max-width: 1024px) {
-  #bodyPart {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-
-  .card-data p {
-    flex-basis: 70%;
-  }
-
   #menuBar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -198,12 +235,6 @@ img {
 /*Target: landscape mode tablets, ipads*/
 
 @media (min-width: 1025px) and (max-width: 1043px) {
-  #bodyPart {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-
   #menuBar {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -239,16 +270,6 @@ img {
 
 /*Devices: Low resolution tablets, mobile*/
 @media (min-width: 481px) and (max-width: 767px) {
-  #bodyPart {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-
-  .card-data p {
-    flex-basis: 65%;
-  }
-
   #menuBar {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -259,67 +280,18 @@ img {
   }
 
   #first_container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem; /* Space between stacked items */
-  }
-
-  #left_container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1rem;
   }
 
   #right_container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  .new-post-btn {
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    max-width: 300px;
-    padding: 0.8rem 1rem;
-  }
-
-  .edit-btn {
-    width: 107.34px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
-    border-radius: 6px;
-    padding: 0 12px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    margin-bottom: 10px;
-    opacity: 70%;
-  }
-
-  img#avatarImg {
-    width: 90px;
-    height: 90px;
-    border-radius: 12px; 
-    object-fit: cover;
+    margin-top: 0;
   }
 }
 
 /*Devices: Smartphones , mobile*/
 @media (min-width: 320px) and (max-width: 480px) {
-  .card-component {
-    flex: 1 1 100%;
-  }
-
-  .card-data p {
-    font-size: 0.85rem;
-    flex-basis: 60%;
-  }
-
   #menuBar {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -334,7 +306,7 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1.5rem; /* Space between stacked items */
+    gap: 0.5rem; /* Space between stacked items */
   }
 
   #left_container {
@@ -343,17 +315,17 @@ img {
   }
 
   #right_container {
-    width: 100%;
+    width: 190%;
     display: flex;
     justify-content: center;
     margin-top: 1rem;
   }
 
   .new-post-btn {
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     max-width: 300px;
     padding: 0.8rem 1rem;
   }
@@ -405,5 +377,42 @@ img {
     height: 90px;
     border-radius: 12px; /* square with rounded corners */
     object-fit: cover;
+  }
+}
+
+/*Media Queries for body section*/
+
+/*Devices: Smartphones , mobile*/
+@media (max-width: 480px) {
+  .card-data p {
+    font-size: 0.85rem;
+    flex-basis: 60%;
+  }
+}
+
+/* Devices: Tablets, ipads */
+@media (min-width: 600px) {
+  #bodyPart {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-data p {
+    font-size: 0.9rem;
+    flex-basis: 70%;
+  }
+}
+
+/*Devices: Laptops, desktops*/
+@media (min-width: 1024px) {
+  #bodyPart {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Target: large screens*/
+@media (min-width: 1280px) {
+  #bodyPart {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.75rem 1.5rem;
   }
 }
