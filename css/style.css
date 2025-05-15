@@ -19,7 +19,6 @@ html {
   --font-weight-bold: 500;
   --color-dark-gray: #212121;
 }
-
 #menuBar {
   background-color: #ffffffcc;
   width: 100%;
@@ -56,21 +55,14 @@ html {
 }
 
 #textContainer {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1.7rem;
+  gap: 1.5rem;
 }
-
 #textContainer p:first-of-type {
-  font-size: 2rem;
+  font-size: 1.95rem;
   font-weight: 500;
   color: #212121;
-}
-
-strong {
-  opacity: 0.7;
 }
 
 #textContainer p:nth-of-type(2) {
@@ -79,10 +71,14 @@ strong {
   margin-bottom: 40px;
 }
 
+#textContainer span {
+  font-size: 0.9rem;
+  color: #212121;
+}
 #textContainer span p {
   font-size: 0.58rem;
+  color: #212121;
 }
-
 #right_container {
   display: flex;
   width: 120px;
@@ -96,8 +92,8 @@ strong {
   background-color: #111;
   gap: 0.4rem;
   font-size: 1rem;
-  margin-top: 200px;
-  padding: 0.5rem;
+  margin-top:200px;
+  padding: 0.5rem;;
 }
 
 #right_container:hover {
@@ -115,19 +111,7 @@ strong {
 #right_container p {
   color: #ffffff;
 }
-#editContainer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 8px;
-  cursor: pointer;
-  opacity: 0.7;
-}
 
-#editContainer:hover {
-  opacity: 1;
-  transition: all ease 0.3s;  
-}
 
 body {
   background-color: var(--bg-body);
@@ -150,12 +134,13 @@ img {
   margin: 2rem auto;
   border-block: 1px solid rgba(33, 33, 33, 0.4);
   display: grid;
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   gap: 2.25rem 1.25rem;
 }
 
 .card-component {
   min-width: 100%;
+
 }
 
 .card-data {
@@ -172,19 +157,20 @@ img {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+
 }
 
 .like-button {
-  background: transparent;
-  outline: none;
-  border: none;
+    background: transparent;
+    outline: none;
+    border: none;
 }
 
 .like-button svg {
-  cursor: pointer;
-  stroke: #212121;
-  opacity: 0.4;
-  transition: all ease 0.3s;
+    cursor: pointer;
+    stroke: #212121;
+    opacity: .4;
+    transition: all ease 0.3s;
 }
 
 .like-button svg:hover {
@@ -192,15 +178,16 @@ img {
 }
 
 .sr-only {
-  clip: rect(1px 1px 1px 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
 }
+
 
 #image-3 {
   border-radius: 10px;
@@ -210,11 +197,21 @@ img {
 
 /* Devices: Tablets, ipads */
 @media (min-width: 768px) and (max-width: 1024px) {
+  #bodyPart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .card-data p {
+    flex-basis: 70%;
+  }
+
   #menuBar {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-
+  
   #logoImg {
     width: 200px; /* Adjust logo size */
   }
@@ -246,6 +243,12 @@ img {
 /*Target: landscape mode tablets, ipads*/
 
 @media (min-width: 1025px) and (max-width: 1043px) {
+  #bodyPart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
   #menuBar {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -281,6 +284,16 @@ img {
 
 /*Devices: Low resolution tablets, mobile*/
 @media (min-width: 481px) and (max-width: 767px) {
+  #bodyPart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .card-data p {
+    flex-basis: 65%;
+  }
+
   #menuBar {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -303,6 +316,15 @@ img {
 
 /*Devices: Smartphones , mobile*/
 @media (min-width: 320px) and (max-width: 480px) {
+  .card-component {
+    flex: 1 1 100%;
+  }
+
+  .card-data p {
+    font-size: 0.85rem;
+    flex-basis: 60%;
+  }
+
   #menuBar {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -310,84 +332,31 @@ img {
 
   #logoImg {
     width: 150px;
-    display: block;
   }
 
   #first_container {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem; /* Space between stacked items */
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
   }
 
-  #left_container {
-    flex-direction: column;
-    align-items: center;
+  #textContainer {
+    gap: 0.5rem;
+  }
+
+  #textContainer p:first-of-type {
+    font-size: 1.25rem;
+  }
+
+  #textContainer p:nth-of-type(2) {
+    font-size: 0.85rem;
   }
 
   #right_container {
-    width: 190%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  .new-post-btn {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin-top: 0;
     width: 100%;
-    max-width: 300px;
-    padding: 0.8rem 1rem;
-  }
-
-  .edit-btn {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 8px;
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0;
-
-    color: #000;
-    opacity: 0.7;
-
-    border-radius: 90px;
-    width: fit-content;
-    padding: 0;
-    height: 16px;
-    margin: 0 auto;
-    cursor: pointer;
-    background: none;
-    border: none;
-  }
-
-  .edit-btn img {
-    width: 16px;
-    height: 16px;
-    object-fit: contain;
-  }
-
-  .edit-btn p {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-  }
-
-  img#avatarImg {
-    width: 90px;
-    height: 90px;
-    border-radius: 12px; /* square with rounded corners */
-    object-fit: cover;
   }
 }
 
@@ -395,35 +364,36 @@ img {
 
 /*Devices: Smartphones , mobile*/
 @media (max-width: 480px) {
-  .card-data p {
-    font-size: 0.85rem;
-    flex-basis: 60%;
-  }
+
+    .card-data p {
+        font-size: .85rem;
+        flex-basis: 60%;
+    }
 }
 
 /* Devices: Tablets, ipads */
 @media (min-width: 600px) {
-  #bodyPart {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    #bodyPart {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  .card-data p {
-    font-size: 0.9rem;
-    flex-basis: 70%;
-  }
+    .card-data p {
+        font-size: .9rem;
+        flex-basis: 70%;
+    }
 }
 
 /*Devices: Laptops, desktops*/
-@media (min-width: 1024px) {
-  #bodyPart {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media(min-width: 1024px) {
+    #bodyPart {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /*Target: large screens*/
 @media (min-width: 1280px) {
-  #bodyPart {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.75rem 1.5rem;
-  }
+    #bodyPart {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.75rem 1.5rem;
+    }
 }
