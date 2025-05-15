@@ -325,6 +325,12 @@ img {
     align-items: center;
   }
 
+  #editContainer {
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 8px;
+  }
+
   #right_container {
     width: 190%;
     display: flex;
