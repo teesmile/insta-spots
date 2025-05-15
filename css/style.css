@@ -56,13 +56,15 @@ html {
 }
 
 #textContainer {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 1.7rem;
 }
 
 #textContainer p:first-of-type {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #212121;
 }
@@ -77,14 +79,10 @@ strong {
   margin-bottom: 40px;
 }
 
-#textContainer span {
-  font-size: 0.9rem;
-  color: #212121;
-}
 #textContainer span p {
   font-size: 0.58rem;
-  color: #212121;
 }
+
 #right_container {
   display: flex;
   width: 120px;
@@ -116,6 +114,19 @@ strong {
 
 #right_container p {
   color: #ffffff;
+}
+#editContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#editContainer:hover {
+  opacity: 1;
+  transition: all ease 0.3s;  
 }
 
 body {
@@ -312,6 +323,12 @@ img {
   #left_container {
     flex-direction: column;
     align-items: center;
+  }
+
+  #editContainer {
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 8px;
   }
 
   #right_container {
