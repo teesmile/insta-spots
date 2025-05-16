@@ -121,3 +121,29 @@ The `main` branch is the heart of our project. We've configured comprehensive br
 ✅ **Network Graph.**
 
 <img width="940" alt="Image" src="https://github.com/user-attachments/assets/dc6bd6c8-c903-414f-b388-9e1eef5a761b" />
+
+---
+# Retrospective: Collaboration Issues Identified
+
+This document outlines key collaboration issues identified during recent retrospectives to enhance workflow and code quality.
+
+---
+
+1. **Editing Other Developers' Code Without Communication:**
+   - Before modifying someone else's code, reach out to the original developer to discuss the changes.
+   - Understand the context and potential impact of the existing implementation.
+   - Provide visibility into planned changes and allow for feedback to prevent conflicts or unintended consequences.
+
+2. **Insufficient Testing Before Raising PRs:**
+   - Prior to raising a Pull Request (PR), thoroughly test your changes:
+     - Ensure that your fix resolves the intended issue without causing new defects.
+     - Test the responsiveness and cross-browser compatibility of the application, not just the specific area affected by your changes.
+     - Conduct regression testing to confirm that unrelated features are not impacted.
+
+3. **Not Syncing with Main Before Pushing to Main:**
+   - Before pushing your changes to the main branch, always pull the latest updates from the main branch.
+   - Resolve any merge conflicts locally and retest to ensure the integrity of the codebase.
+
+---
+
+Implementing these guidelines will help maintain code quality, foster better collaboration, and minimize potential conflicts during development.
